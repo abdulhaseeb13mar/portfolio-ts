@@ -1,4 +1,11 @@
-export default [
+interface Design {
+  name: string;
+  splash: string;
+  images: string[];
+  embed: string;
+}
+
+const designs: Design[] = [
   {
     name: "Bountiful Bags",
     splash: require("./BountifulBags/splash.png"),
@@ -108,3 +115,5 @@ export default [
     embed: "https://www.youtube.com/embed/4AHWNAd9ueU",
   },
 ];
+
+export default designs;

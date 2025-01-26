@@ -1,29 +1,29 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { makeStyles } from "@mui/styles";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import {
   Accordion,
   AccordionSummary,
   AccordionDetails,
   Typography,
-} from "@material-ui/core";
+} from "@mui/material";
+import { Theme } from "@mui/material/styles";
 
-import HTMLIcon from "../../assets/Technologies-Icons/Html-icon.png";
-import ETHIcon from "../../assets/Technologies-Icons/Ethereum-logo.png";
-import CSSIcon from "../../assets/Technologies-Icons/Css-icon.png";
-import FirebaseIcon from "../../assets/Technologies-Icons/Firebase-icon.png";
-import JSIcon from "../../assets/Technologies-Icons/Javascript-icon.png";
-import ReactIcon from "../../assets/Technologies-Icons/react-icon.jpg";
-import VueIcon from "../../assets/Technologies-Icons/Vue-icon.png";
-import ArduinoIcon from "../../assets/Technologies-Icons/arduinoicon.png";
-import MaterialIcon from "../../assets/Technologies-Icons/materialicon.png";
-import NodeJSIcon from "../../assets/Technologies-Icons/nodeJsIcon.png";
-import ReduxIcon from "../../assets/Technologies-Icons/reduxicon.png";
-import ShopifyIcon from "../../assets/Technologies-Icons/shopifyicon.png";
-import CIcon from "../../assets/Technologies-Icons/cicon.png";
-import TSIcon from "../../assets/Technologies-Icons/Typescript-icon.png";
+import HTMLIcon from "Assets/Technologies-Icons/Html-icon.png";
+import ETHIcon from "Assets/Technologies-Icons/Ethereum-logo.png";
+import CSSIcon from "Assets/Technologies-Icons/Css-icon.png";
+import FirebaseIcon from "Assets/Technologies-Icons/Firebase-icon.png";
+import JSIcon from "Assets/Technologies-Icons/Javascript-icon.png";
+import ReactIcon from "Assets/Technologies-Icons/react-icon.jpg";
+import VueIcon from "Assets/Technologies-Icons/Vue-icon.png";
+import ArduinoIcon from "Assets/Technologies-Icons/arduinoicon.png";
+import MaterialIcon from "Assets/Technologies-Icons/materialicon.png";
+import NodeJSIcon from "Assets/Technologies-Icons/nodeJsIcon.png";
+import ReduxIcon from "Assets/Technologies-Icons/reduxicon.png";
+import ShopifyIcon from "Assets/Technologies-Icons/shopifyicon.png";
+import CIcon from "Assets/Technologies-Icons/cicon.png";
+import TSIcon from "Assets/Technologies-Icons/Typescript-icon.png";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((theme: Theme) => ({
   root: {
     width: "100%",
   },

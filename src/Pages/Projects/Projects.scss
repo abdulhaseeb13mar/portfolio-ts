@@ -1,0 +1,13 @@
+.Projects-main-wrapper {
+  margin: 15px auto;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.dialog-image-carousal {
+  height: calc(100vh - 64px);
+  width: auto !important;
+}

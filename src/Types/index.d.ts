@@ -28,6 +28,7 @@ declare module "react-reveal/Zoom" {
     top?: boolean;
     left?: boolean;
     right?: boolean;
+    key?: string | number;
   }
 
   export default class Zoom extends Component<ZoomProps> {}

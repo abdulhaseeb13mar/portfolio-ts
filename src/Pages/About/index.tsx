@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Grid2 } from "@mui/material";
 import Zoom from "react-reveal/Zoom";
 import MeInFrame from "Assets/Aboutus/MeInFrame.png";
-import Accordian from "./Accordian";
+import Accordian from "./accordian";
 import MyName from "Assets/Aboutus/name.png";
 import "./About.scss";
 import { dispatch } from "Store";
