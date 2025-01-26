@@ -6,7 +6,17 @@ import VueIcon from "./Vue-icon.png";
 import FirebaseIcon from "./Firebase-icon.png";
 import EthereumIcon from "./Ethereum-logo.png";
 
-export default {
+interface TechnologyIcons {
+  react: string;
+  js: string;
+  css: string;
+  html: string;
+  vue: string;
+  firebase: string;
+  ethereum: string;
+}
+
+const technologyIcons: TechnologyIcons = {
   react: ReactIcon,
   js: JSIcon,
   css: CSSIcon,
@@ -15,3 +25,5 @@ export default {
   firebase: FirebaseIcon,
   ethereum: EthereumIcon,
 };
+
+export default technologyIcons;

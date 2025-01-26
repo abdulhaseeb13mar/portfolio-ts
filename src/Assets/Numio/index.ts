@@ -3,7 +3,10 @@ import img2 from "./2.webp";
 import img3 from "./3.webp";
 import img4 from "./4.webp";
 import Card from "./card.jpg";
-export default {
+
+const assets = {
   card: Card,
   dialog: [img1, img2, img3, img4],
 };
+
+export default assets;
