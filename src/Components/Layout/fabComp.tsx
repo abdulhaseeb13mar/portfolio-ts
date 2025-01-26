@@ -15,7 +15,7 @@ const useStyles = makeStyles({
     backgroundColor: "#424242",
   },
   fab: {
-    position: "fixed",
+    position: "absolute",
     bottom: 30,
     right: 30,
   },
@@ -62,6 +62,7 @@ const FabComp: React.FC = () => {
         aria-label="add"
         className={classes.fab}
         onClick={handleClick}
+        sx={{ position: "absolute" }}
       >
         <PermContactCalendarIcon />
       </Fab>

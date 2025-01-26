@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import ProjectCard from "./projectCard";
 import ProjectsData from "./ProjectsData";
 import DialogComp from "./dialog";
-import Zoom from "react-reveal/Zoom";
 import "./Projects.scss";
 import { setShowHeader, setSubRoutes, setTab } from "Store/Slices/app";
 import { dispatch } from "Store";
+import { Zoom } from "react-awesome-reveal";
 
 const Projects: React.FC = () => {
   useEffect(() => {
@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
     <>
       <div className="Projects-main-wrapper">
         {ProjectsData.map((project) => (
-          <Zoom right key={project.name}>
+          <Zoom direction="right" key={project.name}>
             <ProjectCard project={project} openDialog={openDialog} />
           </Zoom>
         ))}

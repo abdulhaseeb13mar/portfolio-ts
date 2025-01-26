@@ -1,25 +1,13 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { Grid2 as Grid, Typography, useMediaQuery } from "@mui/material";
-import Zoom from "react-reveal/Zoom";
 import "./singleDesign.scss";
 import { Carousel } from "react-responsive-carousel";
 import DialogComp from "Pages/Projects/dialog";
 import { setShowHeader, setSubRoutes, setTab } from "Store/Slices/app";
 import { dispatch } from "Store";
+import { Zoom } from "react-awesome-reveal";
 
-interface SingleDesignProps {
-  history: {
-    location: {
-      state: {
-        images: string[];
-        name: string;
-        embed: string;
-      };
-    };
-  };
-}
-
-const SingleDesign: React.FC<SingleDesignProps> = (props) => {
+const SingleDesign: React.FC = () => {
   useEffect(() => {
     makeTrue();
   }, []);
@@ -27,8 +15,9 @@ const SingleDesign: React.FC<SingleDesignProps> = (props) => {
   const [dialogPhotos, setDialogPhotos] = useState<string[]>([]);
   const [dialog, setDialog] = useState(false);
   const images = useMemo(
-    () => props.history.location.state.images,
-    [props.history.location.state.images]
+    () => [],
+    // () => props.history.location.state.images,
+    []
   );
   const MediaQueryMatches = useMediaQuery("(max-width:640px)");
 
@@ -60,7 +49,7 @@ const SingleDesign: React.FC<SingleDesignProps> = (props) => {
         style={{ marginTop: 20 }}
       >
         <Grid size={{ xs: 12, sm: 6 }} className="singleDesign-left-Grid">
-          <Zoom top>
+          <Zoom direction="up">
             <div className="singleDesign-Image-Div">
               <div className="circles">
                 <div className="circle-1"></div>
@@ -89,7 +78,7 @@ const SingleDesign: React.FC<SingleDesignProps> = (props) => {
         </Grid>
         <Grid size={{ xs: 12, sm: 5 }} className="singleDesign-Right-Grid">
           <Typography variant="h4" className="singleDesign-TitleText">
-            {props.history.location.state.name}
+            {/* {props.history.location.state.name} */}
           </Typography>
           <div className="singleDesign-MoreSS-Wrapper">
             {images.map((item, index) => (
@@ -127,7 +116,7 @@ const SingleDesign: React.FC<SingleDesignProps> = (props) => {
             paddingTop: 40,
           }}
         >
-          <iframe
+          {/* <iframe
             width="100%"
             height="100%"
             src={props.history.location.state.embed}
@@ -135,7 +124,7 @@ const SingleDesign: React.FC<SingleDesignProps> = (props) => {
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-          ></iframe>
+          ></iframe> */}
         </div>
       </Grid>
       <DialogComp

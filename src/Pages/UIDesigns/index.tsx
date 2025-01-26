@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import Designs from "Assets/Designs";
 import { Typography } from "@mui/material";
 import "./UIDesigns.scss";
-import Zoom from "react-reveal/Zoom";
 import { setShowHeader, setSubRoutes, setTab } from "Store/Slices/app";
 import { dispatch } from "Store";
+import { Zoom } from "react-awesome-reveal";
 
 const UIDesigns: React.FC = (props) => {
   useEffect(() => {
@@ -22,7 +22,7 @@ const UIDesigns: React.FC = (props) => {
   return (
     <div className="All-Cards-Wrapper">
       {Designs.map((item, index: number) => (
-        <Zoom right key={index}>
+        <Zoom direction="right" key={index}>
           <div
             className="Font-Card-div"
             onClick={

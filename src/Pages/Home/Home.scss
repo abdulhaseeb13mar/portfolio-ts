@@ -1,0 +1,124 @@
+.main-home-wrapper {
+  height: calc(100vh);
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../Assets/meBack.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: -1;
+  transition: 0.2s ease-in;
+  width: 100%;
+
+  .home-me-icon-div {
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
+.home-centered-div {
+  margin-top: 20vh;
+  margin-left: 10vw;
+  .home-text1 {
+    margin-top: 20px;
+  }
+}
+
+.home-centered-div {
+  -webkit-animation: breathing 5s ease-out infinite normal;
+  animation: breathing 5s ease-out infinite normal;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+@-webkit-keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.home-MySummary-wrapper {
+  .home-MySummary-div {
+    display: none;
+    margin-left: 5vw;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10vw;
+    flex-wrap: wrap;
+
+    .MySummary-avatar-div {
+      min-width: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .MySummary-summary-div {
+      .MySummary-summary-heading {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .home-MySummary-btns-div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+    .home-MySummary-btns-knowMe {
+      margin: 5px 10px;
+    }
+
+    .home-MySummary-btns-projects {
+      background-color: rgba($color: rgb(224, 224, 224), $alpha: 0.5);
+      color: black !important;
+      margin: 5px 10px;
+    }
+  }
+}

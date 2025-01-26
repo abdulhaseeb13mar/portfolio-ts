@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { makeStyles } from "@mui/styles";
-import Zoom from "react-reveal/Zoom";
 import {
   Card,
   CardActionArea,
@@ -8,9 +7,10 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
-import dummyMedium from "../../assets/Articles/medium.png";
+import dummyMedium from "Assets/Articles/medium.png";
 import axios from "axios";
 import "./Articles.scss";
+import { Zoom } from "react-awesome-reveal";
 
 interface Article {
   title: string;
@@ -68,7 +68,7 @@ const ArticleCard: React.FC = () => {
     <div className="article-card-container">
       {articlesList.map((article, key) => {
         return (
-          <Zoom right key={key}>
+          <Zoom direction="right" key={key}>
             <Card
               className={classes.root}
               onClick={() => handlePhotosLink(article.url)}
