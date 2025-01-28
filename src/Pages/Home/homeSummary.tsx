@@ -1,26 +1,33 @@
 import React from "react";
 import { Typography, Avatar, Button } from "@mui/material";
-import { Theme } from "@mui/material/styles";
 import ME from "Assets/me.png";
 import "./Home.scss";
-import { makeStyles } from "@mui/styles";
 import { dispatch } from "Store";
 import { setSubRoutes, setTab } from "Store/Slices/app";
+import { useNavigate } from "react-router-dom";
 
 const HomeSummary: React.FC = () => {
-  const classes = useStyles();
+  let navigate = useNavigate();
 
   const goToPage = (link: string, tab: number) => {
     dispatch(setTab(tab));
     dispatch(setSubRoutes(true));
-    // props.history.push(link);
+    navigate(link);
   };
 
   return (
     <div className="home-MySummary-wrapper">
       <div className="home-MySummary-div">
         <div className="MySummary-avatar-div">
-          <Avatar alt="Me" src={ME} className={classes.large} />
+          <Avatar
+            alt="Me"
+            src={ME}
+            sx={(theme) => ({
+              width: theme.spacing(15),
+              height: theme.spacing(15),
+              boxShadow: "0px 0px 4px 4px rgb(0,0,0,0.5)",
+            })}
+          />
         </div>
         <div className="MySummary-summary-div">
           <div className="MySummary-summary-heading">
@@ -58,13 +65,5 @@ const HomeSummary: React.FC = () => {
     </div>
   );
 };
-
-const useStyles = makeStyles((theme: Theme) => ({
-  large: {
-    width: theme.spacing(15),
-    height: theme.spacing(15),
-    boxShadow: "0px 0px 4px 4px rgb(0,0,0,0.5)",
-  },
-}));
 
 export default HomeSummary;
