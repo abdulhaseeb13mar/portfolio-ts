@@ -37,7 +37,7 @@ const projects: Project[] = [
       ethereum: TechnologiesIcons.ethereum,
     },
     github: false,
-    demo: "https://app.unipilot.io/",
+    demo: false,
     photos: UnipilotPhotos.dialog,
   },
   {
@@ -65,7 +65,7 @@ const projects: Project[] = [
       ethereum: TechnologiesIcons.ethereum,
     },
     github: false,
-    demo: "https://play.google.com/store/apps/details?id=com.numio.pay",
+    demo: false,
     photos: NumioPhotos.dialog,
   },
   {
@@ -92,7 +92,7 @@ const projects: Project[] = [
       js: TechnologiesIcons.js,
     },
     github: false,
-    demo: "http://the-familywins.web.app/",
+    demo: "https://the-familywins.web.app/",
     photos: FamilyWinsPhotos.dialog,
   },
   {

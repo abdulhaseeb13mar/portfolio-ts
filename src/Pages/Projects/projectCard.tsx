@@ -1,5 +1,4 @@
 import React from "react";
-import { makeStyles } from "@mui/styles";
 import {
   Card,
   CardActionArea,
@@ -17,19 +16,7 @@ interface ProjectCardProps {
   openDialog: (photos: string[]) => void;
 }
 
-const useStyles = makeStyles({
-  root: {
-    maxWidth: 345,
-    backgroundColor: "#424242",
-    color: "white",
-  },
-  media: {
-    height: 140,
-  },
-});
-
 const ProjectCard: React.FC<ProjectCardProps> = (props) => {
-  const classes = useStyles();
   const { project } = props;
 
   const handleGithubLink = () => {
@@ -50,12 +37,15 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
 
   return (
     <div style={{ marginTop: "20px" }}>
-      <Card className={classes.root} onClick={handlePhotosLink}>
+      <Card
+        sx={{ bgcolor: "#424242", color: "white", maxWidth: 345 }}
+        onClick={handlePhotosLink}
+      >
         <CardActionArea>
           <CardMedia
-            className={classes.media}
             image={project.cardPhoto}
             title="Contemplative Reptile"
+            sx={{ height: 140 }}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
