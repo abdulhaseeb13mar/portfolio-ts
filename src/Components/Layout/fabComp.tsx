@@ -11,14 +11,6 @@ const useStyles = makeStyles({
   menuText: {
     color: "white",
   },
-  menuPaper: {
-    backgroundColor: "#424242",
-  },
-  fab: {
-    position: "absolute",
-    bottom: 30,
-    right: 30,
-  },
 });
 
 const FabComp: React.FC = () => {
@@ -60,19 +52,20 @@ const FabComp: React.FC = () => {
       <Fab
         color="secondary"
         aria-label="add"
-        className={classes.fab}
         onClick={handleClick}
-        sx={{ position: "absolute" }}
+        sx={{ position: "fixed", bottom: 30, right: 30 }}
       >
         <PermContactCalendarIcon />
       </Fab>
       <Menu
-        classes={{ paper: classes.menuPaper }}
+        // classes={{ paper: classes.menuPaper }}
         id="simple-menu"
         anchorEl={anchorEl}
         keepMounted
         open={Boolean(anchorEl)}
         onClose={handleClose}
+        sx={{}}
+        slotProps={{ paper: { sx: { bgcolor: "#424242" } } }}
       >
         <MenuItem onClick={() => handleNavigate("git")}>
           <GitHubIcon
