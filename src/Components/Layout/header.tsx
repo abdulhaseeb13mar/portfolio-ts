@@ -11,33 +11,22 @@ import {
   ListItem,
   ListItemText,
 } from "@mui/material";
-import { makeStyles } from "@mui/styles";
-import { Theme } from "@mui/material/styles";
 import MenuIcon from "@mui/icons-material/Menu";
 import { dispatch, useSelector } from "Store";
 import { setSubRoutes, setTab } from "Store/Slices/app";
-
-const useStyles = makeStyles((theme: Theme) => ({
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  tabindicator: {
-    height: "3px",
-  },
-}));
+import { useNavigate } from "react-router-dom";
 
 function Header() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const MediaQueryMatches = useMediaQuery("(max-width:640px)");
   const tab = useSelector((state) => state.app.tab);
   const subRoutes = useSelector((state) => state.app.subRoutes);
-  const classes = useStyles();
+  let navigate = useNavigate();
 
   const handleTabsChange = (val: number, link: string, type?: string) => {
     dispatch(setTab(val));
     dispatch(setSubRoutes(val === 0 ? false : true));
-
-    // props.history.push(link);
+    navigate(link);
     type && handleToggleDrawer();
   };
 
@@ -50,21 +39,22 @@ function Header() {
       <AppBar
         position="static"
         color="transparent"
-        style={{
+        sx={{
           boxShadow: !subRoutes ? "none" : undefined,
           backgroundColor: subRoutes ? "#424242" : undefined,
           transition: "0.3s ease-in-out",
-          color: subRoutes ? "white" : undefined,
+          color: "white",
+          // color: subRoutes ? "white" : undefined,
         }}
       >
         {MediaQueryMatches ? (
           <Toolbar>
             <IconButton
               edge="start"
-              className={classes.menuButton}
               color="inherit"
               aria-label="menu"
               onClick={handleToggleDrawer}
+              sx={(theme) => ({ marginRight: theme.spacing(2) })}
             >
               <MenuIcon style={{ color: "white" }} />
             </IconButton>
@@ -72,25 +62,57 @@ function Header() {
         ) : (
           <Tabs
             value={tab}
-            classes={{ indicator: classes.tabindicator }}
-            TabIndicatorProps={{}}
+            indicatorColor="secondary"
+            TabIndicatorProps={{
+              sx: {
+                height: "3px",
+              },
+            }}
           >
-            <Tab label="Home" onClick={() => handleTabsChange(0, "/")} />
+            <Tab
+              label="Home"
+              sx={(theme) => ({
+                color: subRoutes ? "white" : undefined,
+                fontWeight: 600,
+                "&.Mui-selected": { color: theme.palette.secondary.main },
+              })}
+              onClick={() => handleTabsChange(0, "/")}
+            />
             <Tab
               label="About Me"
               onClick={() => handleTabsChange(1, "/about")}
+              sx={(theme) => ({
+                color: subRoutes ? "white" : undefined,
+                fontWeight: 600,
+                "&.Mui-selected": { color: theme.palette.secondary.main },
+              })}
             />
             <Tab
               label="Projects"
               onClick={() => handleTabsChange(2, "/projects")}
+              sx={(theme) => ({
+                color: subRoutes ? "white" : undefined,
+                fontWeight: 600,
+                "&.Mui-selected": { color: theme.palette.secondary.main },
+              })}
             />
             <Tab
               label="My Articles"
               onClick={() => handleTabsChange(3, "/articles")}
+              sx={(theme) => ({
+                color: subRoutes ? "white" : undefined,
+                fontWeight: 600,
+                "&.Mui-selected": { color: theme.palette.secondary.main },
+              })}
             />
             <Tab
               label="React Native Designs"
               onClick={() => handleTabsChange(4, "/ui-designs")}
+              sx={(theme) => ({
+                color: subRoutes ? "white" : undefined,
+                fontWeight: 600,
+                "&.Mui-selected": { color: theme.palette.secondary.main },
+              })}
             />
           </Tabs>
         )}
