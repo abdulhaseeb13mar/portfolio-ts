@@ -27,10 +27,10 @@ const useStyles = makeStyles((theme: Theme) => ({
   root: {
     width: "100%",
   },
-  heading: {
-    fontSize: theme.typography.pxToRem(15),
-    fontWeight: theme.typography.fontWeightBold,
-  },
+  // heading: {
+  //   fontSize: theme.typography.pxToRem(15),
+  //   fontWeight: theme.typography.fontWeightBold,
+  // },
 }));
 
 function SimpleAccordion() {
@@ -44,7 +44,15 @@ function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography className={classes.heading}>Who I am</Typography>
+          <Typography
+            // className={classes.heading}
+            sx={(theme) => ({
+              fontSize: theme.typography.pxToRem(15),
+              fontWeight: theme.typography.fontWeightBold,
+            })}
+          >
+            Who I am
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -59,7 +67,14 @@ function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography className={classes.heading}>My Expertise</Typography>
+          <Typography
+            sx={(theme) => ({
+              fontSize: theme.typography.pxToRem(15),
+              fontWeight: theme.typography.fontWeightBold,
+            })}
+          >
+            My Expertise
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <div className="About-technologies-div">
@@ -86,7 +101,12 @@ function SimpleAccordion() {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography className={classes.heading}>
+          <Typography
+            sx={(theme) => ({
+              fontSize: theme.typography.pxToRem(15),
+              fontWeight: theme.typography.fontWeightBold,
+            })}
+          >
             My Academic Journey
           </Typography>
         </AccordionSummary>
@@ -117,7 +137,12 @@ function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography className={classes.heading}>
+          <Typography
+            sx={(theme) => ({
+              fontSize: theme.typography.pxToRem(15),
+              fontWeight: theme.typography.fontWeightBold,
+            })}
+          >
             University Achievements
           </Typography>
         </AccordionSummary>
