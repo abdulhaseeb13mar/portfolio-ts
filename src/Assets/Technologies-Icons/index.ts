@@ -5,6 +5,8 @@ import HTMLIcon from "./Html-icon.png";
 import VueIcon from "./Vue-icon.png";
 import FirebaseIcon from "./Firebase-icon.png";
 import EthereumIcon from "./Ethereum-logo.png";
+import TypeScriptIcon from "./Typescript-icon.png";
+import nextJsIcon from "./nextjs-icon.svg";
 
 interface TechnologyIcons {
   react: string;
@@ -14,6 +16,8 @@ interface TechnologyIcons {
   vue: string;
   firebase: string;
   ethereum: string;
+  typescript: string;
+  nextjs: string;
 }
 
 const technologyIcons: TechnologyIcons = {
@@ -24,6 +28,8 @@ const technologyIcons: TechnologyIcons = {
   vue: VueIcon,
   firebase: FirebaseIcon,
   ethereum: EthereumIcon,
+  typescript: TypeScriptIcon,
+  nextjs: nextJsIcon,
 };
 
 export default technologyIcons;
