@@ -12,6 +12,19 @@ import ToDoAppPhotos from "Assets/TodoApp";
 import TictactoePhotos from "Assets/TicTacToe";
 import ShareFoodPakistanPhotos from "Assets/ShareFoodPakistan";
 import HealthEarnPhotos from "Assets/HealthEarn";
+import SpockPhotos from "Assets/Spock";
+import MeshPhotos from "Assets/Mesh";
+import DexterPhotos from "Assets/Dexter";
+import HitStakingPhotos from "Assets/HitStaking";
+import NodeManagerPhotos from "Assets/NodeManager";
+import FomoStakingPhotos from "Assets/FomoStaking";
+import HelloMonsterPhotos from "Assets/HelloMonster";
+import PetLifePhotos from "Assets/PetLife";
+import GizmoPortalPhotos from "Assets/GizmoPortal";
+import NebulaPhotos from "Assets/Nebula";
+import RampxPhotos from "Assets/Rampx";
+import LuminaDexPhotos from "Assets/LuminaDex";
+import SendItPhotos from "Assets/SendIt";
 
 export interface Project {
   name: string;
@@ -26,6 +39,188 @@ export interface Project {
 }
 
 const projects: Project[] = [
+  {
+    name: "Send It",
+    cardPhoto: SendItPhotos.card,
+    description:
+      "Unipilot is a concentrated liquidity manager on uniswap. that helps you to gain maximum APR on various token pools",
+    technologies: {
+      react: TechnologiesIcons.react,
+      ts: TechnologiesIcons.typescript,
+      ethereum: TechnologiesIcons.ethereum,
+    },
+    github: false,
+    demo: "https://sendit-landing-page.vercel.app/",
+    photos: SendItPhotos.dialog,
+  },
+  {
+    name: "Lumina Dex",
+    cardPhoto: LuminaDexPhotos.card,
+    description:
+      "Unipilot is a concentrated liquidity manager on uniswap. that helps you to gain maximum APR on various token pools",
+    technologies: {
+      react: TechnologiesIcons.react,
+      ts: TechnologiesIcons.typescript,
+      ethereum: TechnologiesIcons.ethereum,
+    },
+    github: false,
+    demo: false,
+    photos: LuminaDexPhotos.dialog,
+  },
+  {
+    name: "RampX",
+    cardPhoto: RampxPhotos.card,
+    description:
+      "Unipilot is a concentrated liquidity manager on uniswap. that helps you to gain maximum APR on various token pools",
+    technologies: {
+      nextjs: TechnologiesIcons.nextjs,
+      ts: TechnologiesIcons.typescript,
+      ethereum: TechnologiesIcons.ethereum,
+    },
+    github: false,
+    demo: "https://rampx-dapp.vercel.app/swap",
+    photos: RampxPhotos.dialog,
+  },
+  {
+    name: "Nebula",
+    cardPhoto: NebulaPhotos.card,
+    description:
+      "Unipilot is a concentrated liquidity manager on uniswap. that helps you to gain maximum APR on various token pools",
+    technologies: {
+      nextjs: TechnologiesIcons.nextjs,
+      ts: TechnologiesIcons.typescript,
+      ethereum: TechnologiesIcons.ethereum,
+    },
+    github: false,
+    demo: "https://app.nebula-agency.com/",
+    photos: NebulaPhotos.dialog,
+  },
+  {
+    name: "Gizmo Portal",
+    cardPhoto: GizmoPortalPhotos.card,
+    description:
+      "Unipilot is a concentrated liquidity manager on uniswap. that helps you to gain maximum APR on various token pools",
+    technologies: {
+      nextjs: TechnologiesIcons.nextjs,
+      ts: TechnologiesIcons.typescript,
+      ethereum: TechnologiesIcons.ethereum,
+    },
+    github: false,
+    demo: "https://portal.gizmolab.io/",
+    photos: GizmoPortalPhotos.dialog,
+  },
+  {
+    name: "PetLife",
+    cardPhoto: PetLifePhotos.card,
+    description:
+      "Unipilot is a concentrated liquidity manager on uniswap. that helps you to gain maximum APR on various token pools",
+    technologies: {
+      nextjs: TechnologiesIcons.nextjs,
+      ts: TechnologiesIcons.typescript,
+      ethereum: TechnologiesIcons.ethereum,
+    },
+    github: false,
+    demo: "https://pet-life-chi.vercel.app/",
+    photos: PetLifePhotos.dialog,
+  },
+  {
+    name: "Hello Monster",
+    cardPhoto: HelloMonsterPhotos.card,
+    description:
+      "Unipilot is a concentrated liquidity manager on uniswap. that helps you to gain maximum APR on various token pools",
+    technologies: {
+      nextjs: TechnologiesIcons.nextjs,
+      ts: TechnologiesIcons.typescript,
+      ethereum: TechnologiesIcons.ethereum,
+    },
+    github: false,
+    demo: false,
+    photos: HelloMonsterPhotos.dialog,
+  },
+  {
+    name: "Node Manager Radix",
+    cardPhoto: NodeManagerPhotos.card,
+    description:
+      "Unipilot is a concentrated liquidity manager on uniswap. that helps you to gain maximum APR on various token pools",
+    technologies: {
+      react: TechnologiesIcons.react,
+      ts: TechnologiesIcons.typescript,
+      ethereum: TechnologiesIcons.ethereum,
+    },
+    github: "https://github.com/HIT-radix/node-manager",
+    demo: "https://nodemanager.addix.meme/",
+    photos: NodeManagerPhotos.dialog,
+  },
+  {
+    name: "FOMO Staking",
+    cardPhoto: FomoStakingPhotos.card,
+    description:
+      "Unipilot is a concentrated liquidity manager on uniswap. that helps you to gain maximum APR on various token pools",
+    technologies: {
+      react: TechnologiesIcons.react,
+      js: TechnologiesIcons.js,
+      ethereum: TechnologiesIcons.ethereum,
+    },
+    github: "https://github.com/nemster/fomo_staking",
+    demo: "https://www.fomostake.com/",
+    photos: FomoStakingPhotos.dialog,
+  },
+  {
+    name: "HIT Staking",
+    cardPhoto: HitStakingPhotos.card,
+    description:
+      "Unipilot is a concentrated liquidity manager on uniswap. that helps you to gain maximum APR on various token pools",
+    technologies: {
+      react: TechnologiesIcons.react,
+      ts: TechnologiesIcons.typescript,
+      ethereum: TechnologiesIcons.ethereum,
+    },
+    github: "https://github.com/HIT-radix/staking-interface",
+    demo: "https://addix.meme/",
+    photos: HitStakingPhotos.dialog,
+  },
+  {
+    name: "Dexter",
+    cardPhoto: DexterPhotos.card,
+    description:
+      "Unipilot is a concentrated liquidity manager on uniswap. that helps you to gain maximum APR on various token pools",
+    technologies: {
+      nextjs: TechnologiesIcons.nextjs,
+      ts: TechnologiesIcons.typescript,
+      ethereum: TechnologiesIcons.ethereum,
+    },
+    github: "https://github.com/DeXter-on-Radix/website",
+    demo: "https://dexteronradix.com/trade",
+    photos: DexterPhotos.dialog,
+  },
+  {
+    name: "Mesh",
+    cardPhoto: MeshPhotos.card,
+    description:
+      "Unipilot is a concentrated liquidity manager on uniswap. that helps you to gain maximum APR on various token pools",
+    technologies: {
+      react: TechnologiesIcons.react,
+      ts: TechnologiesIcons.typescript,
+      ethereum: TechnologiesIcons.ethereum,
+    },
+    github: "https://github.com/mesh-protocol/mesh-staking",
+    demo: "https://app.meshprotocol.xyz/",
+    photos: MeshPhotos.dialog,
+  },
+  {
+    name: "Spock",
+    cardPhoto: SpockPhotos.card,
+    description:
+      "Unipilot is a concentrated liquidity manager on uniswap. that helps you to gain maximum APR on various token pools",
+    technologies: {
+      react: TechnologiesIcons.react,
+      ts: TechnologiesIcons.typescript,
+      ethereum: TechnologiesIcons.ethereum,
+    },
+    github: false,
+    demo: "https://spock-analytics-demo-d6c77.web.app/probe/dashboard",
+    photos: SpockPhotos.dialog,
+  },
   {
     name: "UNIPILOT",
     cardPhoto: UnipilotPhotos.card,

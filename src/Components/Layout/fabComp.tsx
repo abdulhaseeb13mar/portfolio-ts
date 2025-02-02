@@ -2,8 +2,8 @@ import React, { useState, MouseEvent } from "react";
 import { Fab, Menu, MenuItem, ListItemText } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
+import PeopleIcon from "@mui/icons-material/People";
+import InstagramIcon from "@mui/icons-material/X";
 import PermContactCalendarIcon from "@mui/icons-material/PermContactCalendar";
 import { makeStyles } from "@mui/styles";
 
@@ -33,14 +33,8 @@ const FabComp: React.FC = () => {
       case "link":
         window.open("https://www.linkedin.com/in/AbdulHaseebSE050", "_blank");
         break;
-      case "insta":
-        window.open("https://www.instagram.com/abdul.haxeeb50/", "_blank");
-        break;
-      case "fb":
-        window.open(
-          "https://www.facebook.com/profile.php?id=100042543474213",
-          "_blank"
-        );
+      case "x":
+        window.open("https://x.com/haseeb_xrd", "_blank");
         break;
       default:
         break;
@@ -55,7 +49,7 @@ const FabComp: React.FC = () => {
         onClick={handleClick}
         sx={{ position: "fixed", bottom: 30, right: 30 }}
       >
-        <PermContactCalendarIcon />
+        <PeopleIcon />
       </Fab>
       <Menu
         // classes={{ paper: classes.menuPaper }}
@@ -81,19 +75,9 @@ const FabComp: React.FC = () => {
           />
           <ListItemText primary="LinkedIn" className={classes.menuText} />
         </MenuItem>
-        <MenuItem onClick={() => handleNavigate("fb")}>
-          <FacebookIcon
-            fontSize="small"
-            style={{ color: "#2d88ff", marginRight: 10 }}
-          />
-          <ListItemText primary="Facebook" className={classes.menuText} />
-        </MenuItem>
-        <MenuItem onClick={() => handleNavigate("insta")}>
-          <InstagramIcon
-            fontSize="small"
-            style={{ color: "#cf2872", marginRight: 10 }}
-          />
-          <ListItemText primary="Instagram" className={classes.menuText} />
+        <MenuItem onClick={() => handleNavigate("x")}>
+          <InstagramIcon fontSize="small" style={{ marginRight: 10 }} />
+          <ListItemText primary="X" className={classes.menuText} />
         </MenuItem>
       </Menu>
     </>

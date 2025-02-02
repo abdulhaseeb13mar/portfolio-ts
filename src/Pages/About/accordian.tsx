@@ -56,8 +56,8 @@ function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            25 years old Software Engineer who graduated from NED, Now Working
-            at Xord to disrupt through web3.
+            27 years old Software Engineer who graduated from NED, Now Working
+            at Gizmolab to disrupt through web3.
           </Typography>
         </AccordionDetails>
       </Accordion>
