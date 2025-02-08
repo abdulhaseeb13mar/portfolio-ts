@@ -20,9 +20,7 @@ const Articles: React.FC = () => {
 
   return (
     <div className="Projects-main-wrapper">
-      <Zoom direction="right">
-        <ArticleCard />
-      </Zoom>
+      <ArticleCard />
     </div>
   );
 };
