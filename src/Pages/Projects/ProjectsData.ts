@@ -43,7 +43,7 @@ const projects: Project[] = [
     name: "Send It",
     cardPhoto: SendItPhotos.card,
     description:
-      "Unipilot is a concentrated liquidity manager on uniswap. that helps you to gain maximum APR on various token pools",
+      "The SendIt Interface is a decentralized finance (DeFi) platform that enables users to create and manage lending markets. Users can lend assets to earn interest or borrow assets by providing collateral.",
     technologies: {
       react: TechnologiesIcons.react,
       ts: TechnologiesIcons.typescript,
@@ -57,7 +57,7 @@ const projects: Project[] = [
     name: "Lumina Dex",
     cardPhoto: LuminaDexPhotos.card,
     description:
-      "Unipilot is a concentrated liquidity manager on uniswap. that helps you to gain maximum APR on various token pools",
+      "Lumina Dex is a decentralized exchange on Mina, providing secure, non-custodial token trading. It leverages Mina’s compact chain architecture to enable efficient, privacy-preserving transactions for decentralized finance (DeFi) and broader global Web3 ecosystem growth.",
     technologies: {
       react: TechnologiesIcons.react,
       ts: TechnologiesIcons.typescript,
@@ -71,7 +71,7 @@ const projects: Project[] = [
     name: "RampX",
     cardPhoto: RampxPhotos.card,
     description:
-      "Unipilot is a concentrated liquidity manager on uniswap. that helps you to gain maximum APR on various token pools",
+      "RampX offers a decentralized token swapping service, enabling users to trade cryptocurrencies across multiple blockchain networks. By connecting a compatible wallet, users can easily exchange tokens, track real-time transaction details, and manage fees.",
     technologies: {
       nextjs: TechnologiesIcons.nextjs,
       ts: TechnologiesIcons.typescript,
@@ -85,7 +85,7 @@ const projects: Project[] = [
     name: "Nebula",
     cardPhoto: NebulaPhotos.card,
     description:
-      "Unipilot is a concentrated liquidity manager on uniswap. that helps you to gain maximum APR on various token pools",
+      "Nebula Agency’s secure login portal provides a centralized platform for users to manage projects, collaborate, and track performance, ensuring streamlined workflows and secure, efficient access to essential digital marketing tools.",
     technologies: {
       nextjs: TechnologiesIcons.nextjs,
       ts: TechnologiesIcons.typescript,
@@ -99,7 +99,7 @@ const projects: Project[] = [
     name: "Gizmo Portal",
     cardPhoto: GizmoPortalPhotos.card,
     description:
-      "Unipilot is a concentrated liquidity manager on uniswap. that helps you to gain maximum APR on various token pools",
+      "Portal.GizmoLab.io offers a secure, centralized platform for users to manage projects, collaborate with teams, and monitor analytics, helping streamline product development while providing accessible, comprehensive tools for innovation and growth.",
     technologies: {
       nextjs: TechnologiesIcons.nextjs,
       ts: TechnologiesIcons.typescript,
@@ -113,7 +113,7 @@ const projects: Project[] = [
     name: "PetLife",
     cardPhoto: PetLifePhotos.card,
     description:
-      "Unipilot is a concentrated liquidity manager on uniswap. that helps you to gain maximum APR on various token pools",
+      "Pet Life merges pet companionship and interactive gaming in a community-driven ecosystem. Users explore pet care resources, virtual adventures, and social features, fostering well-being and fun for all pet lovers",
     technologies: {
       nextjs: TechnologiesIcons.nextjs,
       ts: TechnologiesIcons.typescript,
@@ -127,7 +127,7 @@ const projects: Project[] = [
     name: "Hello Monster",
     cardPhoto: HelloMonsterPhotos.card,
     description:
-      "Unipilot is a concentrated liquidity manager on uniswap. that helps you to gain maximum APR on various token pools",
+      "Hello Monster is a Web3 gaming platform where users mint, stake, and earn points with NFT monsters. It integrates blockchain-based rewards, gamified staking mechanics, and a community-driven experience for digital collectors",
     technologies: {
       nextjs: TechnologiesIcons.nextjs,
       ts: TechnologiesIcons.typescript,
@@ -141,7 +141,7 @@ const projects: Project[] = [
     name: "Node Manager Radix",
     cardPhoto: NodeManagerPhotos.card,
     description:
-      "Unipilot is a concentrated liquidity manager on uniswap. that helps you to gain maximum APR on various token pools",
+      "Node Manager by ADDIX is a staking management platform for tracking validator performance, managing staked XRD, and unlocking rewards. It enables users to stake, unstake, and optimize earnings with validator insights",
     technologies: {
       react: TechnologiesIcons.react,
       ts: TechnologiesIcons.typescript,
@@ -155,7 +155,7 @@ const projects: Project[] = [
     name: "FOMO Staking",
     cardPhoto: FomoStakingPhotos.card,
     description:
-      "Unipilot is a concentrated liquidity manager on uniswap. that helps you to gain maximum APR on various token pools",
+      "FOMO on XRD is a Web3 staking and airdrop platform where users stake $FOMO tokens, earn rewards, and claim NFT-based incentives. It gamifies staking with airdrop bonuses and NFT reward tracking",
     technologies: {
       react: TechnologiesIcons.react,
       js: TechnologiesIcons.js,
@@ -169,7 +169,7 @@ const projects: Project[] = [
     name: "HIT Staking",
     cardPhoto: HitStakingPhotos.card,
     description:
-      "Unipilot is a concentrated liquidity manager on uniswap. that helps you to gain maximum APR on various token pools",
+      "ADDIX HIT is a staking platform where users stake HIT tokens, earn rewards, and participate in validator staking. It integrates NFT-based components and gamified incentives to enhance staking efficiency and earnings",
     technologies: {
       react: TechnologiesIcons.react,
       ts: TechnologiesIcons.typescript,
@@ -183,7 +183,7 @@ const projects: Project[] = [
     name: "Dexter",
     cardPhoto: DexterPhotos.card,
     description:
-      "Unipilot is a concentrated liquidity manager on uniswap. that helps you to gain maximum APR on various token pools",
+      "Dexter on Radix is a decentralized exchange (DEX) enabling seamless token trading on the Radix network. It offers secure swaps, liquidity provision, and efficient trading with low fees and a user-friendly interface",
     technologies: {
       nextjs: TechnologiesIcons.nextjs,
       ts: TechnologiesIcons.typescript,
@@ -197,7 +197,7 @@ const projects: Project[] = [
     name: "Mesh",
     cardPhoto: MeshPhotos.card,
     description:
-      "Unipilot is a concentrated liquidity manager on uniswap. that helps you to gain maximum APR on various token pools",
+      "Mesh is a Solana-based DeFi platform offering token swaps, liquidity provision, and staking. It aggregates liquidity from multiple DEXs for optimal trading, rewarding users with competitive APY and leaderboard incentives.",
     technologies: {
       react: TechnologiesIcons.react,
       ts: TechnologiesIcons.typescript,
@@ -211,7 +211,7 @@ const projects: Project[] = [
     name: "Spock",
     cardPhoto: SpockPhotos.card,
     description:
-      "Unipilot is a concentrated liquidity manager on uniswap. that helps you to gain maximum APR on various token pools",
+      "Spock is a Web3 dApp analytics platform providing insights into user engagement, wallet activity, transaction funnels, and retention. It helps projects optimize strategies by tracking protocol metrics and on-chain behaviors",
     technologies: {
       react: TechnologiesIcons.react,
       ts: TechnologiesIcons.typescript,
