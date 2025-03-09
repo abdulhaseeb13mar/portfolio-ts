@@ -105,7 +105,7 @@ function Header() {
                 "&.Mui-selected": { color: theme.palette.secondary.main },
               })}
             />
-            <Tab
+            {/* <Tab
               label="React Native Designs"
               onClick={() => handleTabsChange(4, "/ui-designs")}
               sx={(theme) => ({
@@ -113,7 +113,7 @@ function Header() {
                 fontWeight: 600,
                 "&.Mui-selected": { color: theme.palette.secondary.main },
               })}
-            />
+            /> */}
           </Tabs>
         )}
       </AppBar>
@@ -139,13 +139,13 @@ function Header() {
               My Articles
             </ListItemText>
           </ListItem>
-          <ListItem>
+          {/* <ListItem>
             <ListItemText
               onClick={() => handleTabsChange(4, "/ui-designs", "d")}
             >
               React Native Designs
             </ListItemText>
-          </ListItem>
+          </ListItem> */}
         </List>
       </Drawer>
     </div>

@@ -5,8 +5,11 @@ import "./UIDesigns.scss";
 import { setShowHeader, setSubRoutes, setTab } from "Store/Slices/app";
 import { dispatch } from "Store";
 import { Zoom } from "react-awesome-reveal";
+import { useNavigate } from "react-router-dom";
 
 const UIDesigns: React.FC = (props) => {
+  let navigate = useNavigate();
+
   useEffect(() => {
     makeTrue();
   }, []);
@@ -25,13 +28,9 @@ const UIDesigns: React.FC = (props) => {
         <Zoom direction="right" key={index}>
           <div
             className="Font-Card-div"
-            onClick={
-              () => {}
-              // props.history.push({
-              //   pathname: "/single-design",
-              //   state: item,
-              // })
-            }
+            onClick={() => {
+              navigate("/single-design", { state: { item } });
+            }}
           >
             <img className="Font-Card-Img" src={item.splash} alt="asd" />
             <Typography className="Font-Card-Txt" variant="h5">
