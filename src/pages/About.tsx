@@ -1,34 +1,65 @@
-import CSSIcon from "@/assets/Technologies-Icons/Css-icon.png";
-import ETHIcon from "@/assets/Technologies-Icons/Ethereum-logo.png";
-import FirebaseIcon from "@/assets/Technologies-Icons/Firebase-icon.png";
-import HTMLIcon from "@/assets/Technologies-Icons/Html-icon.png";
-import JSIcon from "@/assets/Technologies-Icons/Javascript-icon.png";
-import ReactIcon from "@/assets/Technologies-Icons/React-icon.png";
-import TSIcon from "@/assets/Technologies-Icons/Typescript-icon.png";
-import VueIcon from "@/assets/Technologies-Icons/Vue-icon.png";
-import ArduinoIcon from "@/assets/Technologies-Icons/arduinoicon.png";
-import CIcon from "@/assets/Technologies-Icons/cicon.png";
-import MaterialIcon from "@/assets/Technologies-Icons/materialicon.png";
-import NodeJSIcon from "@/assets/Technologies-Icons/nodeJsIcon.png";
-import ReduxIcon from "@/assets/Technologies-Icons/reduxicon.png";
-import ShopifyIcon from "@/assets/Technologies-Icons/shopifyicon.png";
 import Me from "@/assets/me.png";
 
 const expertise = [
-  { name: "React", icon: ReactIcon },
-  { name: "TypeScript", icon: TSIcon },
-  { name: "JavaScript", icon: JSIcon },
-  { name: "Node.js", icon: NodeJSIcon },
-  { name: "HTML", icon: HTMLIcon },
-  { name: "CSS", icon: CSSIcon },
-  { name: "Ethereum", icon: ETHIcon },
-  { name: "Material UI", icon: MaterialIcon },
-  { name: "Redux", icon: ReduxIcon },
-  { name: "Firebase", icon: FirebaseIcon },
-  { name: "C", icon: CIcon },
-  { name: "Vue", icon: VueIcon },
-  { name: "Arduino", icon: ArduinoIcon },
-  { name: "Shopify", icon: ShopifyIcon },
+  {
+    category: "Languages",
+    items: [
+      { name: "TypeScript", iconClass: "devicon-typescript-plain" },
+      { name: "JavaScript", iconClass: "devicon-javascript-plain" },
+      { name: "C++", iconClass: "devicon-cplusplus-plain" },
+      { name: "C", iconClass: "devicon-c-plain" },
+      { name: "HTML", iconClass: "devicon-html5-plain" },
+      { name: "CSS", iconClass: "devicon-css3-plain" },
+      { name: "Arduino", iconClass: "devicon-arduino-plain" },
+    ],
+  },
+  {
+    category: "Frontend",
+    items: [
+      { name: "React", iconClass: "devicon-react-original" },
+      { name: "Next.js", iconClass: "devicon-nextjs-plain colored" },
+      { name: "Vue", iconClass: "devicon-vuejs-plain" },
+      { name: "Redux", iconClass: "devicon-redux-original" },
+      { name: "Material UI", iconClass: "devicon-materialui-plain" },
+      { name: "Expo", iconClass: "devicon-expo-plain" },
+      { name: "Axios", iconClass: "devicon-axios-plain" },
+    ],
+  },
+  {
+    category: "Backend & Database",
+    items: [
+      { name: "Node.js", iconClass: "devicon-nodejs-plain" },
+      { name: "NestJS", iconClass: "devicon-nestjs-plain" },
+      { name: "Express", iconClass: "devicon-express-original" },
+      { name: "Prisma", iconClass: "devicon-prisma-original" },
+      { name: "MongoDB", iconClass: "devicon-mongodb-plain" },
+      { name: "MySQL", iconClass: "devicon-mysql-plain" },
+      { name: "Firebase", iconClass: "devicon-firebase-plain" },
+      { name: "Supabase", iconClass: "devicon-supabase-plain" },
+      { name: "GraphQL", iconClass: "devicon-graphql-plain" },
+    ],
+  },
+  {
+    category: "Blockchain",
+    items: [{ name: "Web3.js", iconClass: "devicon-web3js-plain" }],
+  },
+  {
+    category: "Tools & Platforms",
+    items: [
+      { name: "GitHub", iconClass: "devicon-github-original" },
+      { name: "Vercel", iconClass: "devicon-vercel-original" },
+      { name: "Vite", iconClass: "devicon-vitejs-plain" },
+      { name: "Figma", iconClass: "devicon-figma-plain" },
+      { name: "Jira", iconClass: "devicon-jira-plain" },
+      { name: "Trello", iconClass: "devicon-trello-plain" },
+      { name: "Postman", iconClass: "devicon-postman-plain" },
+      { name: "Swagger", iconClass: "devicon-swagger-plain" },
+      { name: "ESLint", iconClass: "devicon-eslint-plain" },
+      { name: "npm", iconClass: "devicon-npm-original-wordmark" },
+      { name: "pnpm", iconClass: "devicon-pnpm-plain" },
+      { name: "Yarn", iconClass: "devicon-yarn-original" },
+    ],
+  },
 ];
 
 const academicJourney = [
@@ -91,15 +122,28 @@ export function AboutPage() {
 
       {/* Expertise Section */}
       <section className="mb-20">
-        <h2 className="text-3xl font-bold mb-8 text-center">My Expertise</h2>
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-6">
-          {expertise.map((tech) => (
-            <div
-              key={tech.name}
-              className="flex flex-col items-center justify-center p-4 bg-white dark:bg-zinc-800 rounded-xl shadow-sm border border-zinc-100 dark:border-zinc-700 hover:shadow-md transition-all"
-            >
-              <img src={tech.icon} alt={tech.name} className="w-12 h-12 mb-3 object-contain" />
-              <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300">{tech.name}</span>
+        <h2 className="text-3xl font-bold mb-12 text-center">My Expertise</h2>
+        <div className="space-y-12">
+          {expertise.map((category) => (
+            <div key={category.category}>
+              <h3 className="text-xl font-semibold mb-6 text-zinc-900 dark:text-zinc-100 flex items-center gap-3">
+                <span className="w-8 h-1 bg-blue-600 rounded-full"></span>
+                {category.category}
+              </h3>
+              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-6">
+                {category.items.map((tech) => (
+                  <div
+                    key={tech.name}
+                    className="flex flex-col items-center justify-center p-4 bg-white dark:bg-zinc-800 rounded-xl shadow-sm border border-zinc-100 dark:border-zinc-700 hover:shadow-md transition-all group"
+                  >
+                    <i
+                      className={`${tech.iconClass} colored text-4xl md:text-5xl leading-none mb-3 group-hover:scale-110 transition-transform duration-300`}
+                      aria-hidden="true"
+                    />
+                    <span className="text-sm font-medium text-zinc-700 dark:text-zinc-300 text-center">{tech.name}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
         </div>
