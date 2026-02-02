@@ -31,7 +31,7 @@ export function Footer() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="https://x.com"
+                href="https://x.com/haseeb_xrd"
                 target="_blank"
                 rel="noreferrer"
                 className="p-2 bg-white dark:bg-zinc-900 rounded-full border border-zinc-200 dark:border-zinc-800 hover:border-blue-600 transition-colors"
