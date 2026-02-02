@@ -47,11 +47,11 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
       )}
     >
       {/* Variable Aspect Ratio Container */}
-      <div className={cn("relative overflow-hidden bg-zinc-100 dark:bg-zinc-800", project.featured ? "h-64 md:h-auto w-full aspect-auto" : "aspect-[4/3]")}>
+      <div className={cn("relative overflow-hidden bg-zinc-100 dark:bg-zinc-800", project.featured ? "h-64 md:h-auto w-full aspect-auto" : "aspect-4/3")}>
         <img src={project.thumbnail} alt={project.title} className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" />
 
         {/* Overlay Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <div className="absolute inset-0 bg-linear-to-t from-zinc-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
         <div className="absolute top-4 right-4 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-2 group-hover:translate-y-0">
           <div className="bg-white/90 dark:bg-zinc-900/90 backdrop-blur-sm p-2 rounded-full shadow-lg">
@@ -60,7 +60,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
         </div>
       </div>
 
-      <div className="flex flex-col p-6 md:p-8 flex-grow">
+      <div className="flex flex-col p-6 md:p-8 grow">
         <div className="mb-4">
           {/* Category & Featured Badge */}
           <div className="flex items-center gap-2 mb-3">
@@ -144,7 +144,7 @@ export function ProjectsPage() {
         <CategoryFilter categories={categories} selected={selectedCategory} onSelect={setSelectedCategory} />
 
         {/* Grid Section */}
-        <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 auto-rows-[minmax(0,1fr)]">
+        <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 auto-rows-fr">
           <AnimatePresence mode="popLayout">
             {filteredProjects.map((project, index) => (
               <ProjectCard key={project.id} project={project} index={index} />
