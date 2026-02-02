@@ -25,6 +25,7 @@ export interface Project {
   link?: string;
   featured: boolean;
   category: "DeFi" | "NFT" | "SaaS" | "Mobile" | "Other";
+  allImages: string[];
 }
 
 export interface Stat {
